@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacta amb nosaltres</title>
+  <link rel="stylesheet" href="estils/estils.css">
+</head>
+<body>
+<main>
+<header>
+    <h1>Viatges a Toquio organitzats</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="contacte.html">Contacte</a> </li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <h2 class="form">Formulari de contacte</h2>
+    <form action="get_form.php" method="get">
+        <label for="fnom">Nom: </label><input type="text" name="nom" id="fnom"> <br>
+        <label for="femail">Email: </label><input type="email" name="email" id="femail"> <br>
+        <label for="ftelefon">Numero de telefon: </label><input type="text" name="telefon" id="ftelefon">
+        <p>Edat: </p>
+        <input type="radio" name="edat" value="menys25" id="fedat"><label for="fedat">Menor de 25</label><br>
+        <input type="radio" name="edat" value="mes25" id="fedat2"><label for="fedat2">Major de 25</label><br>
+        <label for="fmsg">Missatge: </label><br><textarea id="fmsg" name="msg"></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+</main>
+<footer>Web feta per Abel Fuentes</footer>
+</body>
+</html>
